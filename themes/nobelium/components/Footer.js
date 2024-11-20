@@ -21,6 +21,9 @@ export const Footer = (props) => {
        <div className="flex align-baseline justify-between flex-wrap">
          <p>
            © {siteConfig('AUTHOR')} {copyrightDate}
+           <div className='text-center text-xs text-gray-500 mt-2'>
+            备案号：鲁ICP备2024121860号
+           </div>
          </p>
          <Vercel />
        </div>

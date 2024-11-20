@@ -11,22 +11,20 @@ export const Footer = (props) => {
   const copyrightDate = parseInt(since) < currentYear ? since + '-' + currentYear : currentYear
 
   return <footer
-     className={`z-10 relative mt-6 flex-shrink-0 m-auto w-full text-gray-500 dark:text-gray-400 transition-all ${
-       !fullWidth ? 'max-w-2xl px-4' : 'px-4 md:px-24'
-     }`}
-   >
-     <DarkModeButton className='text-center py-4'/>
-     <hr className="border-gray-200 dark:border-gray-600" />
-     <div className="my-4 text-sm leading-6">
-       <div className="flex align-baseline justify-between flex-wrap">
-         <p>
-           © {siteConfig('AUTHOR')} {copyrightDate}
-           <div className='text-center text-xs text-gray-500 mt-2'>
-            备案号：鲁ICP备2024121860号
-           </div>
-         </p>
-         <Vercel />
-       </div>
-     </div>
-   </footer>
+    className={`z-10 relative mt-6 flex-shrink-0 m-auto w-full text-gray-500 dark:text-gray-400 transition-all ${!fullWidth ? 'max-w-2xl px-4' : 'px-4 md:px-24'
+      }`}
+  >
+    <DarkModeButton className='text-center py-4' />
+    <hr className="border-gray-200 dark:border-gray-600" />
+    <div className="my-4 text-sm leading-6">
+      <div className="flex align-baseline justify-between flex-wrap">
+        <p>
+          © {siteConfig('AUTHOR')} {copyrightDate}
+          <div className='text-center text-xs text-gray-500 mt-2'>
+          </div>
+        </p>
+        <Vercel />
+      </div>
+    </div>
+  </footer>
 }
